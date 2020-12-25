@@ -21,7 +21,7 @@ class RedisConnect:
     def __init__(self, db):
         self.redis_host = "127.0.0.1"
         self.redis_port = 6379
-        self.redis_password = "liwei123"
+        self.redis_password = ""
         self.db = db
         self.connect = self.redis_connect()
         self.proxies_db = 1

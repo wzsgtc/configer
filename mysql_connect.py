@@ -19,16 +19,16 @@ class MysqlConnect:
 
     def __init__(self, db=1, database='acquisition'):
         if db == 1:
-            self.host = "172.20.2.13"
+            self.host = ""
             self.port = 3306
-            self.user = "gongqiaofeng"
-            self.password = "gongqiaofeng"
+            self.user = ""
+            self.password = ""
             self.database = database
         else:
-            self.host = "172.20.2.34"
+            self.host = ""
             self.port = 3306
-            self.user = "root"
-            self.password = "root"
+            self.user = ""
+            self.password = ""
             self.database = database
         self._conn = MysqlConnect.__get_conn(self)
         self._cursor = self._conn.cursor(cursor=pymysql.cursors.DictCursor)
